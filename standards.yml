@@ -1,0 +1,64 @@
+standards:
+  - identifier: "standard-1"
+    name: "Standard 1"
+    description: "This is a description of standard 1"
+    category: "category-1"
+    mandatory: true
+    effective_date: "2025-01-01"
+    applicability: 
+      - "version-1"
+      - "version-2"
+    big_rocks:
+      - "big-rock-1"
+      - "big-rock-2"
+    criteria:
+      - criterion-1
+      - criterion-2
+    rationale:
+      - "rationale-1"
+      - "rationale-2"
+    outstanding_questions:
+      - "question-1"
+      - "question-2"
+  - identifier: "standard-2"
+    name: "Standard 2"
+    description: "This is a description of standard 2"
+    category: "category-2"
+    mandatory: false
+    effective_date: "2025-01-01"
+    applicability: 
+      - "version-1"
+      - "version-2"
+    big_rocks:
+      - "big-rock-1"
+      - "big-rock-2"
+    criteria:
+      - criterion-1
+      - criterion-2
+    rationale:
+      - "rationale-1"
+      - "rationale-2"
+    outstanding_questions:
+      - "question-1"
+      - "question-2"
+  - identifier: "standard-3"
+    name: "Standard 3"
+    description: "This is a description of standard 3"
+    category: "category-3"
+    mandatory: false
+    effective_date: "2025-01-01"
+    applicability: 
+      - "version-1"
+      - "version-2"
+    big_rocks:
+      - "big-rock-1"
+      - "big-rock-2"
+    criteria:
+      - criterion-1
+      - criterion-2
+    rationale:
+      - "rationale-1"
+      - "rationale-2"
+    outstanding_questions:
+      - "question-1"
+      - "question-2"

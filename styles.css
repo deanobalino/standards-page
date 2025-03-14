@@ -1,0 +1,243 @@
+:root {
+    --primary-color: #6366f1;
+    --primary-hover: #4f46e5;
+    --secondary-color: #6b7280;
+    --success-color: #10b981;
+    --info-color: #3b82f6;
+    --warning-color: #f97316;
+    --danger-color: #ef4444;
+    --light-color: #f9fafb;
+    --dark-color: #111827;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #374151;
+    line-height: 1.5;
+}
+
+/* Custom scrollbar for a modern look */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+/* Filter section styles */
+#activeFilters {
+    min-height: 32px;
+}
+
+#activeFilters span {
+    transition: all 0.2s;
+}
+
+#activeFilters button {
+    transition: all 0.2s;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th {
+    position: relative;
+    transition: all 0.2s;
+}
+
+th svg {
+    transition: transform 0.2s;
+}
+
+th.active svg {
+    opacity: 1;
+}
+
+th.asc svg {
+    transform: rotate(180deg);
+}
+
+tbody tr {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+tbody tr:hover {
+    background-color: #f3f4f6;
+}
+
+/* Filter buttons */
+#filterButtons button {
+    transition: all 0.2s;
+}
+
+#filterButtons button:not(.active) {
+    background-color: transparent;
+    color: #4b5563;
+    border: 1px solid #d1d5db;
+}
+
+#filterButtons button:not(.active):hover {
+    background-color: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+/* Standard detail card */
+.standard-detail {
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    transition: all 0.3s;
+    background-color: white;
+}
+
+.standard-detail:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.standard-detail-header {
+    padding: 1.25rem;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: #f9fafb;
+}
+
+.standard-detail-body {
+    padding: 1.25rem;
+}
+
+.standard-detail h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.standard-detail .metadata {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.standard-detail .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.standard-detail .badge-primary {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+}
+
+.standard-detail .badge-secondary {
+    background-color: #f3f4f6;
+    color: #4b5563;
+}
+
+.standard-detail .badge-success {
+    background-color: #d1fae5;
+    color: #059669;
+}
+
+.standard-detail .badge-warning {
+    background-color: #ffedd5;
+    color: #ea580c;
+}
+
+.standard-detail .badge-info {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.standard-detail .description {
+    margin-bottom: 1.5rem;
+    line-height: 1.625;
+}
+
+.standard-detail .section {
+    margin-bottom: 1.5rem;
+}
+
+.standard-detail .section h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.75rem;
+}
+
+.standard-detail .section ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.standard-detail .section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.standard-detail .section ul li:last-child {
+    margin-bottom: 0;
+}
+
+.standard-detail .section ul li a {
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.standard-detail .section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Animation for highlighting */
+@keyframes highlight {
+    0% { background-color: #fef3c7; }
+    100% { background-color: white; }
+}
+
+.highlight {
+    animation: highlight 2s ease-out;
+}
+
+/* Form controls */
+select, input {
+    appearance: none;
+    transition: all 0.2s;
+}
+
+select:focus, input:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #6366f1;
+    border-color: #6366f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .standard-detail .metadata {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+} 
